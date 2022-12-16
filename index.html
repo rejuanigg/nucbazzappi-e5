@@ -4,18 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assetss/index.css">
+    <link rel="stylesheet" href="./assetss/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Nucbazzapi</title>
 </head>
 <body>
     <header class="header">
         <img src="./assetss/nucbazzapi-icon.png" alt="Nucbazzapi" class="main-icon">
           <nav class="nav">
+            
               <ul>
-                  <li class="nav-link"><a href="#"><img class="home-icon" src="./assetss/home-icon.png" alt="Home"> <span class="home-text"> Home </span> </a></li>
-                  <li class="nav-link"><a href="#"><img class="icon-cart" src="./assetss/icon-cart.png" alt="Carrito"><input type="checkbox" name="cart-toggle" id="cart-toggle"><label for="cart-toggle"></label></a></li>
+                  <li class="nav-link"><a href="#"><img class="home-icon" src="./assetss/home-icon.png" alt="Home"><span class="home-text"> Home </span> </a></li>
+                  <li class="nav-link"><a href="#">
+
+
+
+
+                    <label for="cart-toggle" class="cart-label"><img src="./assetss/icon-cart.png" alt="Carrito"> </label>
+                    <input type="checkbox" name="cart-toggle" id="cart-toggle" class="cart-toggle">
+                
+                    <div class="cart">
+                        <h2>Tus Pedidos</h2>
+
+                        <div class="cart-item">
+                            <img src="./assetss/item1.png" alt="Pizza">
+                            <div class="item-info">
+                                <h3 class="item-title">Messi</h3>
+                                <p class="item-bid">Con Muzzarella</p>
+                                <span class="item-price">1000ARS</span>
+                            </div>
+                            <div class="item-handler">
+                                <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-item">
+                            <img src="./assetss/item3.png" alt="Pizza">
+                            <div class="item-info">
+                                <h3 class="item-title">Messi</h3>
+                                <p class="item-bid">Con Muzzarella</p>
+                                <span class="item-price">1000ARS</span>
+                            </div>
+                            <div class="item-handler">
+                                <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <img src="./assetss/item2.png" alt="Pizza">
+                            <div class="item-info">
+                                <h3 class="item-title">Messi</h3>
+                                <p class="item-bid">Con Muzzarella</p>
+                                <span class="item-price">1000ARS</span>
+                            </div>
+                            <div class="item-handler">
+                                <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
+                            </div>
+                        </div>
+
+
+
+                        <span class="divider"></span>
+
+
+
+
+                        <div class="cart-total"> 
+                          <p>Total</p> 
+                      <span>1000 ARS</span></div>
+                        <button class="btn-add">Comprar</button>
+
+
+
+
+
+                    </div>
+                   </a></li>
                   <li class="nav-link"><a href="#"><img class="icon-profile" src="./assetss/icon-profile.png" alt="Perfil"></a></li>
               </ul>
+              
           </nav>
     </header>
 
