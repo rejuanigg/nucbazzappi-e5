@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="./assetss/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CDN de Font Awesome -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
     <title>Nucbazzapi</title>
 </head>
 <body>
@@ -15,13 +21,15 @@
           <nav class="nav">
             
               <ul>
-                  <li class="nav-link"><a href="#"><img class="home-icon" src="./assetss/home-icon.png" alt="Home"><span class="home-text"> Home </span> </a></li>
                   <li class="nav-link"><a href="#">
-
-
-
-
-                    <label for="cart-toggle" class="cart-label"><img src="./assetss/icon-cart.png" alt="Carrito"> </label>
+                    <!-- <img class="home-icon" src="./assetss/home-icon.png" alt="Home"> -->
+                    <i class="fa-solid fa-house home-icon"></i>
+                    <span class="home-text"> Home </span> </a></li>
+                  <li class="nav-link"><a href="#">
+                    <label for="cart-toggle" class="cart-label">
+                        <!-- <img src="./assetss/icon-cart.png" alt="Carrito">  -->
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                    </label>
                     <input type="checkbox" name="cart-toggle" id="cart-toggle" class="cart-toggle">
                 
                     <div class="cart">
@@ -30,9 +38,9 @@
                         <div class="cart-item">
                             <img src="./assetss/item1.png" alt="Pizza">
                             <div class="item-info">
-                                <h3 class="item-title">Messi</h3>
+                                <h3 class="item-title">Tronco-Pizza</h3>
                                 <p class="item-bid">Con Muzzarella</p>
-                                <span class="item-price">1000ARS</span>
+                                <span class="item-price">$870,00</span>
                             </div>
                             <div class="item-handler">
                                 <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
@@ -42,9 +50,9 @@
                         <div class="cart-item">
                             <img src="./assetss/item3.png" alt="Pizza">
                             <div class="item-info">
-                                <h3 class="item-title">Messi</h3>
-                                <p class="item-bid">Con Muzzarella</p>
-                                <span class="item-price">1000ARS</span>
+                                <h3 class="item-title">Papas | Provenzal</h3>
+                                <p class="item-bid">Con Ketchup</p>
+                                <span class="item-price">$360,00</span>
                             </div>
                             <div class="item-handler">
                                 <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
@@ -54,34 +62,28 @@
                         <div class="cart-item">
                             <img src="./assetss/item2.png" alt="Pizza">
                             <div class="item-info">
-                                <h3 class="item-title">Messi</h3>
-                                <p class="item-bid">Con Muzzarella</p>
-                                <span class="item-price">1000ARS</span>
+                                <h3 class="item-title">Bennazianna</h3>
+                                <p class="item-bid">Completa</p>
+                                <span class="item-price">$3650,00</span>
                             </div>
                             <div class="item-handler">
                                 <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
                             </div>
                         </div>
 
-
-
                         <span class="divider"></span>
-
-
-
 
                         <div class="cart-total"> 
                           <p>Total</p> 
-                      <span>1000 ARS</span></div>
+                      <span>$4880,00</span></div>
                         <button class="btn-add">Comprar</button>
-
-
-
-
 
                     </div>
                    </a></li>
-                  <li class="nav-link"><a href="#"><img class="icon-profile" src="./assetss/icon-profile.png" alt="Perfil"></a></li>
+                  <li class="nav-link"><a href="#">
+                    <!-- <img class="icon-profile" src="./assetss/icon-profile.png" alt="Perfil"> -->
+                    <i class="fa-solid fa-user icon-profile"></i>
+                </a></li>
               </ul>
               
           </nav>
