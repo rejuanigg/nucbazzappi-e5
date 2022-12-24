@@ -79,7 +79,7 @@
     display: none;
 }
 
-.cart   {
+.cart  {
     position: absolute;
     top: 65px;
     right: 0;
@@ -92,6 +92,7 @@
     height: calc(100vh -  65px);
     display: none;
     z-index: 2;
+    cursor: auto;
 }
 
 .cart h2 {
@@ -149,6 +150,8 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    border: 1px solid var(--white);
+    border-radius: 30px;
 }
 
 .quantity-handler {
@@ -164,18 +167,13 @@
     color: var(--white);
 }
 
-
-.up {
-    border: 1px solid var(--white);
-}
-
 .up:hover {
     background-color: #3c3a3a;
+    border-radius: 30px;
 }
 
 .down {
-    background-color:#3c3a3a;
-    border: 1px solid var(--white);
+    color: #3c3a3a;
 }
 
 .divider {
