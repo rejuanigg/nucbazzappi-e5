@@ -1,152 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assetss/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- CDN de Font Awesome -->
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assetss/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Nucbazzapi</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <img src="./assetss/nucbazzapi-icon.png" alt="Nucbazzapi" class="main-icon">
-          <nav class="nav">
-            
-              <ul>
-                  <li class="nav-link"><a href="#">
-                    <i class="fa-solid fa-house home-icon"></i>
-                    <span class="home-text"> Home </span> </a></li>
-                  <li class="nav-link"><a href="#">
-                    <label for="cart-toggle" class="cart-label">
-                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
-                    </label>
-                    <input type="checkbox" name="cart-toggle" id="cart-toggle" class="cart-toggle">
-                
-                    <div class="cart">
-                        <h2>Mis Pedidos</h2>
+      <img
+        src="./assetss/nucbazzapi-icon.png"
+        alt="Nucbazzapi"
+        class="main-icon"
+      />
+      <nav class="nav">
+        <ul>
+          <li class="nav-link">
+            <a href="#"
+              ><img
+                class="home-icon"
+                src="./assetss/home-icon.png"
+                alt="Home"
+              /><span class="home-text"> Home </span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <label for="cart-toggle" class="cart-label"
+                ><img src="./assetss/icon-cart.png" alt="Carrito" />
+              </label>
+              <input
+                type="checkbox"
+                name="cart-toggle"
+                id="cart-toggle"
+                class="cart-toggle"
+              />
 
-                        <div class="cart-item">
-                            <img src="./assetss/item1.png" alt="Pizza">
-                            <div class="item-info">
-                                <h3 class="item-title">Tronco-Pizza</h3>
-                                <p class="item-bid">Con Muzzarella</p>
-                                <span class="item-price">$870,00</span>
-                            </div>
-                            <div class="item-handler">
-                                <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
-                            </div>
-                        </div>
-                        
-                        <div class="cart-item">
-                            <img src="./assetss/item3.png" alt="Pizza">
-                            <div class="item-info">
-                                <h3 class="item-title">Papas | Provenzal</h3>
-                                <p class="item-bid">Con Ketchup</p>
-                                <span class="item-price">$360,00</span>
-                            </div>
-                            <div class="item-handler">
-                                <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
-                            </div>
-                        </div>
+              <div class="cart">
+                <h2>Tus Pedidos</h2>
 
-                        <div class="cart-item">
-                            <img src="./assetss/item2.png" alt="Pizza">
-                            <div class="item-info">
-                                <h3 class="item-title">Bennazianna</h3>
-                                <p class="item-bid">Completa</p>
-                                <span class="item-price">$3650,00</span>
-                            </div>
-                            <div class="item-handler">
-                                <span class="quantity-handler down">-</span><span class="item-quantity">1</span><span class="quantity-handler up">+</span>
-                            </div>
-                        </div>
-                        <h3 class="title-pay">Agregar Forma de Pago</h3>
-                        <div class="pay-mettod">
-                            <button class="btn-pay btn-1">En Efectivo </button>
-                            <button class="btn-pay btn-2">Agregar Tarjeta</button>
-                        </div>
-                        
+                <div class="cart-item">
+                  <img src="./assetss/item1.png" alt="Pizza" />
+                  <div class="item-info">
+                    <h3 class="item-title">Messi</h3>
+                    <p class="item-bid">Con Muzzarella</p>
+                    <span class="item-price">1000ARS</span>
+                  </div>
+                  <div class="item-handler">
+                    <span class="quantity-handler down">-</span
+                    ><span class="item-quantity">1</span
+                    ><span class="quantity-handler up">+</span>
+                  </div>
+                </div>
 
-                        <span class="divider"></span>
+                <div class="cart-item">
+                  <img src="./assetss/item3.png" alt="Pizza" />
+                  <div class="item-info">
+                    <h3 class="item-title">Messi</h3>
+                    <p class="item-bid">Con Muzzarella</p>
+                    <span class="item-price">1000ARS</span>
+                  </div>
+                  <div class="item-handler">
+                    <span class="quantity-handler down">-</span
+                    ><span class="item-quantity">1</span
+                    ><span class="quantity-handler up">+</span>
+                  </div>
+                </div>
 
-                        <div class="cart-total"> 
-                          <p>Total</p> 
-                      <span>$4880,00</span></div>
-                        <button class="btn-add">Ir a Pagar</button>
-                     
+                <div class="cart-item">
+                  <img src="./assetss/item2.png" alt="Pizza" />
+                  <div class="item-info">
+                    <h3 class="item-title">Messi</h3>
+                    <p class="item-bid">Con Muzzarella</p>
+                    <span class="item-price">1000ARS</span>
+                  </div>
+                  <div class="item-handler">
+                    <span class="quantity-handler down">-</span
+                    ><span class="item-quantity">1</span
+                    ><span class="quantity-handler up">+</span>
+                  </div>
+                </div>
 
-                    </div>
-                   </a></li>
-                  <li class="nav-link"><a href="#">
-                    <i class="fa-solid fa-user icon-profile"></i>
-                </a></li>
-              </ul>
-              
-          </nav>
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                  <p>Total</p>
+                  <span>1000 ARS</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+              </div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#"
+              ><img
+                class="icon-profile"
+                src="./assetss/icon-profile.png"
+                alt="Perfil"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="section-cat">
-            <div class="product-categories">
-             <h2>Categorías</h2>
-              <div class="contenedor-cat">
-                <div class="categories">
-                    <img src="./assetss/Categorias/image 34.png"/>
-                    <h3>Pizzas</h3>
-                    <div class="barrainf"></div>
-                </div>
-
-                <div class="categories">
-                    <img src="./assetss/Categorias/burger 1.png"/>
-                    <h3>Hamburguesas</h3>
-                    <div class="barrainf"></div>
-                </div>
-
-                <div class="categories">
-                    <img src="./assetss/Categorias/fries 2.png"/>
-                    <h3>Napapuki</h3>
-                    <div class="barrainf"></div>
-                </div>
-
-                <div class="categories">
-                    <img src="./assetss/Categorias/pizza 2.png"/>
-                    <h3>Individuales</h3>
-                    <div class="barrainf"></div>
-                </div>
-
-                <div class="categories">
-                    <img src="./assetss/Categorias/buritto 1.png"/>
-                    <h3>Wraps</h3>
-                    <div class="barrainf"></div>
-                </div>
-
-                <div class="categories">
-                    <img src="./assetss/Categorias/taco 1.png"/>
-                    <h3>Mexican Food</h3>
-                    <div class="barrainf"></div>
-                </div>
-
-                <div class="categories">
-                    <img src="./assetss/Categorias/float 1.png"/>
-                    <h3>Batidukis</h3>
-                    <div class="barrainf"></div>
-                </div>
-               </div>
+      <section id="hero">
+        <div class="hero-info">
+          <h1>Si tenes Zappi, tenes Nucba.</h1>
+          <p>Buscá lo que quieras y nucba te quedes sin comida.</p>
+          <div class="boton">
+            <a href="#">VER MÁS</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="./assetss/pizzitas.png" alt="pizza" />
+        </div>
+      </section>
+      <section id="recomend">
+        <h2>Hoy te recomendamos</h2>
+        <div class="caja-recomend">
+          <div class="caja-prod">
+            <div class="prod-img">
+              <img src="./assetss/Bennazianna.png" alt="item1" />
             </div>
-        </section>
+            <div class="prod">
+              <h3>Bennazianna</h3>
+              <p>La más completa</p>
+              <strong class="precio">$ 3650</strong>
+            </div>
+            <div class="boton2"><a href="#">Agregar</a></div>
+          </div>
+          <div class="caja-prod">
+            <div class="prod-img">
+              <img src="./assetss/Troncopizza.png" alt="item2" />
+            </div>
+            <div class="prod">
+              <h3>Tronco-pizza</h3>
+              <p>Para todo el dia</p>
+              <strong class="precio">$ 870</strong>
+            </div>
+            <div class="boton2"><a href="#">Agregar</a></div>
+          </div>
+          <div class="caja-prod">
+            <div class="prod-img">
+              <img src="./assetss/papas.png" alt="item3" />
+            </div>
+            <div class="prod">
+              <h3>Papas | Provenzal</h3>
+              <p>Van como piña</p>
+              <strong class="precio">$ 360</strong>
+            </div>
+            <div class="boton2"><a href="#">Agregar</a></div>
+          </div>
+        </div>
+      </section>
 
+      <section id="section-cat">
+        <div class="product-categories">
+          <h2>Categorías</h2>
+          <div class="contenedor-cat">
+            <div class="categories">
+              <img src="./assetss/Categorias/image 34.png" />
+              <h3>Pizzas</h3>
+              <div class="barrainf"></div>
+            </div>
+
+            <div class="categories">
+              <img src="./assetss/Categorias/burger 1.png" />
+              <h3>Hamburguesas</h3>
+              <div class="barrainf"></div>
+            </div>
+
+            <div class="categories">
+              <img src="./assetss/Categorias/fries 2.png" />
+              <h3>Napapuki</h3>
+              <div class="barrainf"></div>
+            </div>
+
+            <div class="categories">
+              <img src="./assetss/Categorias/pizza 2.png" />
+              <h3>Individuales</h3>
+              <div class="barrainf"></div>
+            </div>
+
+            <div class="categories">
+              <img src="./assetss/Categorias/buritto 1.png" />
+              <h3>Wraps</h3>
+              <div class="barrainf"></div>
+            </div>
+
+            <div class="categories">
+              <img src="./assetss/Categorias/taco 1.png" />
+              <h3>Mexican Food</h3>
+              <div class="barrainf"></div>
+            </div>
+
+            <div class="categories">
+              <img src="./assetss/Categorias/float 1.png" />
+              <h3>Batidukis</h3>
+              <div class="barrainf"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
