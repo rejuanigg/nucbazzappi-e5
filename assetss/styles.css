@@ -18,22 +18,19 @@
 
 /*navbar*/
 
-.header {
+.header  {
   height: 65px;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(47, 47, 47, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: var(--background);
   padding: 0px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .main-icon {
-  width: 51px;
-  height: 51px;
+ width: 51px;
+ height: 51px;
+
 }
 
 .nav ul {
@@ -43,34 +40,52 @@
 }
 
 .home-text {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: azure;
   padding: 0px 20px;
   font-size: 12px;
 }
 
-#cart-toggle {
+.home-icon {
+  font-weight: 600;
+
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--orange);
+}
+
+.icon-profile {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--orange);
+}
+
+.cart-icon {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--orange);
+}
+
+#cart-toggle{
   display: none;
 }
 
-.cart {
+.cart  {
   position: absolute;
   top: 65px;
   right: 0;
   padding: 50px 30px;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 11%,
-    rgba(37, 37, 37, 1) 62%
-  );
-  border-left: 1px solid none;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 11%, rgba(37,37,37,1) 62%);
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: calc(100vh - 65px);
+  height: calc(100vh -  65px);
   display: none;
   z-index: 2;
+  cursor: auto;
 }
 
 .cart h2 {
@@ -82,11 +97,10 @@
 .cart-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
-  background-color: var(--background);
-  padding: 20px;
-  border: 2px solid var(--orange);
+  padding: 15px;
+  border: 1px solid var(--orange);
   border-radius: 10px;
 }
 
@@ -98,10 +112,11 @@
 .item-info {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .item-title {
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 14px;
 }
@@ -113,12 +128,13 @@
 }
 
 .item-price {
-  background: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
+  background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 16px;
   font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .item-handler {
@@ -126,6 +142,8 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  border: 1px solid var(--white);
+  border-radius: 30px;
 }
 
 .quantity-handler {
@@ -136,23 +154,26 @@
   border-radius: 5px;
 }
 
+
 .item-quantity {
-  color: #3c3a3a;
+  color: var(--white);
 }
 
-.up {
-  border: 1px solid var(--white);
+.up:hover {
+  background-color: #3c3a3a;
+  border-radius: 30px;
 }
 
 .down {
-  background-color: #3c3a3a;
-  border: 1px solid var(--white);
+  color: #686262;
 }
 
 .divider {
   border: 0.5px solid var(--white);
   margin-top: 20px;
+
 }
+
 
 .cart-total {
   display: flex;
@@ -169,6 +190,7 @@
   color: var(--white);
   font-size: 18px;
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #cart-toggle:checked + .cart {
@@ -176,11 +198,41 @@
 }
 
 .btn-add {
-  border: 2px solid #ffa100;
-  border-radius: 5px;
-  height: 30px;
-  background-image: linear-gradient(98.81deg, #ffa100 -0.82%, #fb103d 101.53%);
+  border: 2px solid var(--background);
+  border-radius: 45px;
+  height: 35px;
+  background-image:linear-gradient(98.81deg, #FFA100 -0.82%, #fb103d 101.53%) ;
   color: var(--white);
+  cursor: pointer;
+}
+
+.title-pay {
+  color: var(--white);
+  /* text-decoration: underline; */
+}   
+
+.pay-mettod {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.btn-pay {
+  border: 2px solid var(--background);
+  border-radius: 10px;
+  height: 30px;
+  background: linear-gradient(90deg, rgba(135,11,122,1) 11%, rgba(89,12,193,1) 62%);
+  color: var(--white);
+  font-weight: 700;
+  width: 150px;
+  cursor: pointer;
+}
+
+.cart-img {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 /*main*/
