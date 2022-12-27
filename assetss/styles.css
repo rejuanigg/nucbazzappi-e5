@@ -1,5 +1,5 @@
 :root {
-  --background: #252525;
+  --background: #0d0d0d;
   --orange: #ffa400;
   --red: #fc2933;
   --white: #ffffff;
@@ -14,6 +14,11 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-padding-top: 65px;
+  scroll-behavior: smooth;
 }
 
 /*navbar*/
@@ -78,11 +83,11 @@
   top: 65px;
   right: 0;
   padding: 50px 30px;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 11%, rgba(37,37,37,1) 62%);
+  background: linear-gradient(180deg, rgba(13,13,13,1) 21%, rgba(4,4,4,1) 60%);
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: calc(100vh -  65px);
+  height: calc(100vh - 65px);
   display: none;
   z-index: 2;
   cursor: auto;
